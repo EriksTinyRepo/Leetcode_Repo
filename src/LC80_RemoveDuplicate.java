@@ -5,7 +5,6 @@ public class LC80_RemoveDuplicate {
 
         // Default case if the list is less or equal to 2
         if(nums.length <= 2) return nums.length;
-//shiqiao
         int windowSize = 2;
         for(int pointer = 2; pointer < nums.length; pointer++) {
             if(nums[pointer] != nums[windowSize - 2]) {
